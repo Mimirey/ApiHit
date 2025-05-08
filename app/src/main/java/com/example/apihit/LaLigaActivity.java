@@ -43,10 +43,10 @@ public class LaLigaActivity extends AppCompatActivity {
                 .addConverterFactory(GsonConverterFactory.create())
                 .build();
 
-        SpainApi api = retrofit.create(SpainApi.class);
+        SportsApi api = retrofit.create(SportsApi.class);
 
 
-        Call<TeamResponse> call = api.getTeamsByCountry("Soccer", "Spain");
+        Call<TeamResponse> call = api.getTeams("Spanish La Liga");
         call.enqueue(new Callback<TeamResponse>() {
             @Override
             public void onResponse(Call<TeamResponse> call, Response<TeamResponse> response) {
