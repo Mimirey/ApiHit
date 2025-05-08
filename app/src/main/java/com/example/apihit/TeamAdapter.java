@@ -39,7 +39,7 @@ public class TeamAdapter extends RecyclerView.Adapter<TeamAdapter.TeamViewHolder
 
         Glide.with(context)
                 .load(team.getStrBadge())
-                .placeholder(R.drawable.ic_placeholder) // optional, kalau belum loading
+                .placeholder(R.drawable.ic_placeholder) // INI APA YANG TAMPIL SEMISAL DATA GA KEAKSES
                 .into(holder.ivImage);
     }
 
